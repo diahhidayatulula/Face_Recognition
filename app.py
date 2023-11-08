@@ -5,21 +5,26 @@ import cv2
 known_face_encodings = []
 known_face_names = []
 
-# Contoh: Anda memiliki dua gambar wajah dengan nama 'John' dan 'Jane'
-john_image = face_recognition.load_image_file("john.jpg")
-john_face_encoding = face_recognition.face_encodings(john_image)[0]
-known_face_encodings.append(john_face_encoding)
-known_face_names.append("John")
-
-bryan_image = face_recognition.load_image_file("bryan.jpg")
+bryan_image = face_recognition.load_image_file("face/bryan.jpg")
 bryan_face_encoding = face_recognition.face_encodings(bryan_image)[0]
 known_face_encodings.append(bryan_face_encoding)
 known_face_names.append("Bryan")
 
-jane_image = face_recognition.load_image_file("jane.jpg")
-jane_face_encoding = face_recognition.face_encodings(jane_image)[0]
-known_face_encodings.append(jane_face_encoding)
-known_face_names.append("Jane")
+diah_image = face_recognition.load_image_file("face/diah.jpg")
+diah_face_encoding = face_recognition.face_encodings(diah_image)[0]
+known_face_encodings.append(diah_face_encoding)
+known_face_names.append("Diah")
+
+ocha_image = face_recognition.load_image_file("face/ocha.jpg")
+ocha_face_encoding = face_recognition.face_encodings(ocha_image)[0]
+known_face_encodings.append(ocha_face_encoding)
+known_face_names.append("Ocha")
+
+rijhantina_image = face_recognition.load_image_file("face/rijhantina.jpg")
+rijhantina_face_encoding = face_recognition.face_encodings(rijhantina_image)[0]
+known_face_encodings.append(rijhantina_face_encoding)
+known_face_names.append("Rijhantina")
+
 
 # Inisialisasi webcam
 video_capture = cv2.VideoCapture(0)
